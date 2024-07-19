@@ -608,8 +608,8 @@ img {
   border: none;
 }
 
-.modal-icon-close:hover,
-.modal-icon-close:focus {
+.modal-button-close:hover .modal-icon-close,
+.modal-button-close:focus .modal-icon-close {
   fill: #fff;
 }
 
@@ -719,6 +719,9 @@ img {
   justify-content: center;
   fill: transparent;
   margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .term-cond-input:checked + .terms-cond-text > .second-input {
